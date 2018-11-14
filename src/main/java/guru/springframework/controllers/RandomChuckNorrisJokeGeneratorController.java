@@ -20,10 +20,11 @@ public class RandomChuckNorrisJokeGeneratorController
         this.randomChuckNorrisJokeGeneratorService = randomChuckNorrisJokeGeneratorService;
     }
 
-    @RequestMapping(path = "/", method = GET)
+    @RequestMapping(path = { "", "/" }, method = GET)
     String getRandomChuckNorrisJoke(final Model model)
     {
-        model.addAttribute("chuckNorrisJoke", randomChuckNorrisJokeGeneratorService.getRandomChuckNorrisJoke());
+        final String randomChuckNorrisJoke = randomChuckNorrisJokeGeneratorService.getRandomChuckNorrisJoke();
+        model.addAttribute("chuckNorrisJoke", randomChuckNorrisJoke);
 
         return "chucknorris";
     }
