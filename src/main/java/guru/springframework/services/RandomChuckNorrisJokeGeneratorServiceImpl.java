@@ -10,9 +10,9 @@ public class RandomChuckNorrisJokeGeneratorServiceImpl
 {
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public RandomChuckNorrisJokeGeneratorServiceImpl()
+    public RandomChuckNorrisJokeGeneratorServiceImpl(final ChuckNorrisQuotes chuckNorrisQuotes)
     {
-        chuckNorrisQuotes = new ChuckNorrisQuotes();
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
