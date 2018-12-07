@@ -1,4 +1,4 @@
-package guru.springframework.controllers;
+package guru.springframework.jokes.controllers;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import guru.springframework.services.RandomChuckNorrisJokeGeneratorService;
+import guru.springframework.jokes.services.RandomChuckNorrisJokeGeneratorService;
 
 @Controller
 public class RandomChuckNorrisJokeGeneratorController

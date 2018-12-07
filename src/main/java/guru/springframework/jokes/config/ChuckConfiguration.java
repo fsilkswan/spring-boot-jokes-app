@@ -1,4 +1,4 @@
-package guru.springframework.config;
+package guru.springframework.jokes.config;
 
 // @Configuration
 public class ChuckConfiguration
